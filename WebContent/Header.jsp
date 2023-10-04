@@ -37,5 +37,6 @@ color:#fff !important;
 </section>
 <script type="text/javascript" src="http://localhost:8080/StudentAdmission/assets/bootstrap/bootstrap.bundle.min.js"></script>
  <script type="text/javascript" src="http://localhost:8080/StudentAdmission/assets/js/script.js"></script>
+ <script type="text/javascript" src="http://localhost:8080/StudentAdmission/assets/js/signup.js"></script>
 </body>
 </html>

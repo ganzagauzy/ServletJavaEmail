@@ -1,6 +1,4 @@
-function greet(name) {
-    console.log(`Hello, ${name}!`);
-}
+
 
 const languageLinks = document.querySelectorAll('.language-link');
 console.log(`lang, ${languageLinks}!`);
@@ -14,24 +12,30 @@ languageLinks.forEach(link => {
 });
 // Function to toggle sections based on selected language
 
-greet("John");
+
+
 function toggleSections(selectedLang) {
 	const Kinyarwandasection = document.getElementById("kinyarwanda");
 	const Englishsection = document.getElementById("english");
 	const Frenchsection = document.getElementById("french");
 	 if(selectedLang === Kinyarwandasection.id){
 		 console.log(`Kiny true!`);
-		 Englishsection.style.display = "none";
-		 Frenchsection.style.display = "none";
+		 Kinyarwandasection.classList.add("show");
+		 Englishsection.classList.remove("show");
+		 Frenchsection.classList.remove("show");
 	 }
 	 else if(selectedLang === Englishsection.id) {
 		 console.log(`Eng true!`);
-		 Kinyarwandasection.style.display = "none";
-		 Frenchsection.style.display = "none";
+		 Kinyarwandasection.classList.remove("show");
+		 Englishsection.classList.add("show");
+		 Frenchsection.classList.remove("show");
+//		 Kinyarwandasection.style.display = "none";
+//		 Frenchsection.style.display = "none";
 	 }
 	 else {
 		 console.log(`Fr true!`);
-		 Englishsection.style.display = "none";
-		 Kinyarwandasection.style.display = "none";
+		 Kinyarwandasection.classList.remove("show");
+		 Englishsection.classList.add("show");
+		 Frenchsection.classList.add("show");
 	 }
 }
